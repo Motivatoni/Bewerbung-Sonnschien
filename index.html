@@ -1,3 +1,9 @@
+/*
+Willkommen in meinem kleinen Code für meine Website.
+Ich baue hier ein paar CSS Elemente mit etwas Javasciptcode zusammen,
+um der Website etwas leben einzuhauchen.
+*/
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -7,9 +13,6 @@
     <meta name="description" content="Interaktive Bewerbung als Pächterteam für die Sonnschienhütte im Hochschwab. Ein Team mit Leidenschaft für die Berge, nachhaltige Gastronomie und alpine Gastfreundschaft.">
     
     <style>
-        /* ============================================
-           CSS RESET & BASE
-           ============================================ */
         *, *::before, *::after {
             margin: 0;
             padding: 0;
@@ -57,7 +60,9 @@
             -webkit-font-smoothing: antialiased;
         }
 
-     /* progress bar */
+        /* 
+        progress bar 
+        */
      
         .progress-indicator {
             position: fixed;
@@ -85,7 +90,9 @@
             transition: width 0.1s linear;
         }
 
-        /* burger menu */
+        /* 
+        burger menu 
+        */
         
         .nav {
             position: fixed;
@@ -166,7 +173,9 @@
             transform: rotate(-45deg) translate(7px, -6px);
         }
 
-        /* dd menu */
+        /* 
+        dd menu 
+        */
         
         .mobile-dropdown {
             position: fixed;
@@ -216,7 +225,9 @@
             padding-left: 1rem;
         }
 
-        /* heroo */
+        /* 
+        heroo 
+        */
         
         .hero {
             position: relative;
@@ -329,7 +340,9 @@
             to { opacity: 1; transform: translateX(-50%) translateY(0); }
         }
 
-        /* section */
+        /* 
+        section 
+        */
         
         .section {
             padding: 6rem 2rem;
@@ -385,7 +398,9 @@
             color: rgba(255,255,255,0.7);
         }
 
-        /* fade */
+        /* 
+        fade 
+        */
         
         .fade-scroll {
             position: relative;
@@ -464,7 +479,9 @@
             margin-bottom: 1rem;
         }
 
-        /* sticky */
+        /* 
+        sticky 
+        */
         
         .sticky-scroll {
             background: var(--color-light);
@@ -573,7 +590,9 @@
             transform: scale(1);
         }
 
-        /* mobile team flow < 768px */
+        /* 
+        mobile layput team flow < 768px 
+        */
         
         @media (max-width: 767px) {
             .team-mobile {
@@ -751,7 +770,9 @@
             }
         }
 
-        /* concept grid */
+        /*
+        concept grid 
+        */
         
         .concept-grid {
             display: grid;
@@ -823,7 +844,9 @@
             font-size: 1.1rem;
         }
 
-        /* stats */
+        /* 
+        stats 
+        */
         
         .stats-section {
             background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
@@ -865,7 +888,9 @@
             letter-spacing: 1px;
         }
 
-        /* cta */
+        /* 
+        cta 
+        */
         
         .cta-section {
             text-align: center;
@@ -882,8 +907,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(255, 255, 255, 0.4); /* dunkelgrünes Overlay für bessere Lesbarkeit */
-            z-index: 1;
+            background: rgba(255, 255, 255, 0.4);
         }
 
         .cta-section > * {
@@ -930,7 +954,7 @@
             background: rgba(255, 255, 255, 0.25);
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
-            color: var(--color-primary); /* Grüne Schrift */
+            color: var(--color-primary);
             text-decoration: none;
             border-radius: 50px;
             font-size: 1rem;
@@ -956,12 +980,11 @@
             box-shadow: var(--shadow-md);
         }
 
-        /* Outline-Button erbt jetzt den gleichen Stil */
         .cta-button--outline {
             background: rgba(255, 255, 255, 0.25);
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
-            color: var(--color-primary); /* Grüne Schrift */
+            color: var(--color-primary);
             border: 1px solid rgba(255, 255, 255, 0.4);
         }
 
@@ -969,10 +992,14 @@
             background: rgba(255, 255, 255, 0.4);
             backdrop-filter: blur(16px);
             -webkit-backdrop-filter: blur(16px);
-            color: var(--color-primary); /* Grüne Schrift bleibt */
+            color: var(--color-primary);
             border-color: rgba(255, 255, 255, 0.6);
         }
-        /* footer */
+        
+        /*
+        footer 
+        */
+        
         .footer {
             background: var(--color-dark);
             color: var(--color-white);
@@ -992,7 +1019,9 @@
             opacity: 0.7;
         }
 
-        /* responsive */
+        /*
+        responsive 
+        */
         
         @media (max-width: 600px) {
             .hero__content {
@@ -1038,7 +1067,9 @@
             }
         }
 
-        /* motion reduce */
+        /*
+        motion reduce 
+        */
         
         @media (prefers-reduced-motion: reduce) {
             *, *::before, *::after {
@@ -1055,12 +1086,10 @@
 </head>
 <body id="top">
 
-    <!-- Progress Indicator -->
     <div class="progress-indicator" id="progressIndicator">
         <div class="progress-indicator__bar" id="progressBar"></div>
     </div>
-
-    <!-- Navigation -->
+    
     <nav class="nav" id="nav">
         <div class="nav__container">
             <img src="logo.png" alt="Logo" class="nav__logo">
@@ -1078,7 +1107,6 @@
         </div>
     </nav>
 
-    <!-- Full-Screen Dropdown Menü -->
     <div class="mobile-dropdown" id="mobileDropdown">
         <a href="#top" class="mobile-dropdown__link">Start</a>
         <a href="#team" class="mobile-dropdown__link">Team</a>
@@ -1087,7 +1115,6 @@
         <a href="#kontakt" class="mobile-dropdown__link">Kontakt</a>
     </div>
 
-    <!-- Hero Section -->
     <section class="hero">
         <div class="hero__background" id="heroBg"></div>
         <div class="hero__overlay"></div>
@@ -1100,7 +1127,6 @@
         <div class="hero__scroll">Scrollen</div>
     </section>
 
-    <!-- Einleitung - Fade Scroll Section -->
     <section class="fade-scroll" id="einleitung">
         <div class="fade-scroll__background">
             <div class="fade-scroll__bg-item fade-scroll__bg-item--active" style="background-image: url('hero2.png');"></div>
@@ -1130,10 +1156,9 @@
         </div>
     </section>
 
-    <!-- MOBILE TEAM SECTION -->
     <div class="team-mobile">
         
-        <!-- Camila -->
+        <!-- Cami <3 <3 <3 XOXO -->
         <div class="team-mobile__member" data-member="camila">
             <div class="team-mobile__photo-section">
                 <div class="team-mobile__photo" style="background-image: url('Camila.png');"></div>
@@ -1169,7 +1194,7 @@
             </div>
         </div>
 
-        <!-- Toni -->
+        <!-- it's a me...Toni...Carneyro! 😉 -->
         <div class="team-mobile__member" data-member="toni">
             <div class="team-mobile__photo-section">
                 <div class="team-mobile__photo" style="background-image: url('Toni.png');"></div>
@@ -1205,7 +1230,7 @@
             </div>
         </div>
 
-        <!-- Jacqueline -->
+        <!-- Mama. Die beste natürlich 💕-->
         <div class="team-mobile__member" data-member="jacqueline">
             <div class="team-mobile__photo-section">
                 <div class="team-mobile__photo" style="background-image: url('Jacqueline.png');"></div>
@@ -1243,7 +1268,7 @@
 
     </div>
 
-    <!-- DESKTOP TEAM SECTION -->
+    <!-- Desktop Version Team 💪 -->
     <section class="sticky-scroll section--full" id="team">
         <div class="sticky-scroll__container">
             <div class="section__header">
@@ -1309,7 +1334,7 @@
         </div>
     </section>
 
-    <!-- Betriebskonzept Section -->
+    <!-- Konzept Section -->
     <section class="section" id="konzept">
         <div class="section__header">
             <p class="section__eyebrow">Betriebskonzept</p>
@@ -1398,7 +1423,7 @@
         </div>
     </section>
 
-    <!-- Stats Section -->
+    <!-- Stats 😎 -->
     <section class="stats-section">
         <div class="stats-grid">
             <div class="stat-item" data-animate>
@@ -1424,7 +1449,7 @@
         </div>
     </section>
 
-    <!-- CTA Section -->
+    <!-- Contact -->
     <section class="cta-section" id="kontakt">
         <h2>Lassen Sie uns gemeinsam Großartiges schaffen</h2>
         <p>Wir freuen uns darauf, die Sonnschienhütte zu einem unvergesslichen Ort zu machen – für Gäste, für das Team und für die Region Hochschwab.</p>
@@ -1453,14 +1478,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 
     <script>
-        // ============================================
-        // INITIALISIERUNG
-        // ============================================
+        // init
         gsap.registerPlugin(ScrollTrigger);
 
-        // ============================================
-        // NAVIGATION SCROLL-EFFEKT (Burger-Symbol wird schwarz)
-        // ============================================
+        // Nav Scroll effect
         const nav = document.getElementById('nav');
         const hero = document.querySelector('.hero');
 
@@ -1472,9 +1493,7 @@
             }
         });
 
-        // ============================================
-        // PROGRESS INDICATOR
-        // ============================================
+        // ladebalken
         const progressIndicator = document.getElementById('progressIndicator');
         const progressBar = document.getElementById('progressBar');
 
@@ -1493,9 +1512,7 @@
             }
         });
 
-        // ============================================
-        // HERO PARALLAX
-        // ============================================
+        // hero parallax 
         const heroBg = document.getElementById('heroBg');
         
         gsap.to(heroBg, {
@@ -1515,9 +1532,7 @@
         gsap.to('.hero__subtitle', { opacity: 1, y: 0, duration: 1, delay: 0.7, ease: 'power3.out' });
         gsap.to('.hero__team', { opacity: 1, y: 0, duration: 1, delay: 0.9, ease: 'power3.out' });
 
-        // ============================================
-        // FADE SCROLL
-        // ============================================
+        // fade
         const fadeScrollSections = document.querySelectorAll('.fade-scroll');
         
         fadeScrollSections.forEach(section => {
@@ -1551,9 +1566,7 @@
             });
         });
 
-        // ============================================
-        // STICKY SCROLL
-        // ============================================
+        // sticky
         const stickyScrollSections = document.querySelectorAll('.sticky-scroll');
         
         stickyScrollSections.forEach(section => {
@@ -1596,9 +1609,7 @@
             });
         });
 
-        // ============================================
-        // MOBILE TEAM FLOW
-        // ============================================
+        // mobile
         document.querySelectorAll('.team-mobile__member').forEach(member => {
             const photo = member.querySelector('.team-mobile__photo');
             const photoSection = member.querySelector('.team-mobile__photo-section');
@@ -1639,9 +1650,7 @@
             });
         });
 
-        // ============================================
-        // CONCEPT CARDS
-        // ============================================
+        // Konzept karten
         const conceptCards = document.querySelectorAll('.concept-card');
         conceptCards.forEach((card, index) => {
             ScrollTrigger.create({
@@ -1654,9 +1663,7 @@
             });
         });
 
-        // ============================================
-        // STATS ANIMATION
-        // ============================================
+        // stats animationen
         const statItems = document.querySelectorAll('.stat-item');
         statItems.forEach((stat, index) => {
             ScrollTrigger.create({
@@ -1690,9 +1697,7 @@
             });
         });
 
-        // ============================================
-        // CTA BUTTONS
-        // ============================================
+        // contact buttons
         const ctaButtons = document.querySelectorAll('.cta-button');
         ctaButtons.forEach((button, index) => {
             ScrollTrigger.create({
@@ -1705,20 +1710,17 @@
             });
         });
 
-               // ============================================
-        // SMOOTH SCROLL (Intelligent für Mobile/Desktop)
-        // ============================================
+               // smooth
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 const href = this.getAttribute('href');
                 
-                // Spezialbehandlung für den Team-Link
+                // Team-Link fix
                 if (href === '#team') {
                     e.preventDefault();
                     const isMobile = window.innerWidth < 768;
                     
-                    // Mobile: zur mobilen Team-Sektion (Bilder) scrollen
-                    // Desktop: zur Desktop Team-Sektion (Header) scrollen
+                    // team link target
                     const target = isMobile ? document.querySelector('.team-mobile') : document.querySelector('.sticky-scroll');
                     
                     if (target) {
@@ -1727,7 +1729,8 @@
                     return;
                 }
 
-                // Standardverhalten für alle anderen Links (#konzept, #kontakt, etc.)
+                // alle anderen link targets. ich musste das trennen weil die desktop version und die mobil version anders
+                // aufgebaut sind und der link ja zur ersten Profilkarte führen soll. so klappts 🥳
                 e.preventDefault();
                 const target = document.querySelector(href);
                 if (target) {
@@ -1735,9 +1738,7 @@
                 }
             });
         });
-        // ============================================
-        // BURGER MENÜ
-        // ============================================
+        // burger menu
         const burger = document.getElementById('navBurger');
         const mobileDropdown = document.getElementById('mobileDropdown');
         
@@ -1762,9 +1763,7 @@
             });
         }
 
-        // ============================================
-        // REFRESH SCROLLTRIGGER
-        // ============================================
+        // scrolltrigger refresh
         let resizeTimer;
         window.addEventListener('resize', () => {
             clearTimeout(resizeTimer);
